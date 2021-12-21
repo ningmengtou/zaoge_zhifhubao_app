@@ -1,0 +1,441 @@
+page {
+  background: #f2f4f5;
+}
+.tableBox {
+  display: flex;
+  width: 100%;
+  padding: 0 30rpx;
+  background-color: #fff;
+  .tableItem {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #292929;
+    line-height: 26rpx;
+    padding: 30rpx 0;
+  }
+  .tableItem::after {
+    position: absolute;
+    content: '';
+    width: 2rpx;
+    height: 25rpx;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e6e6e6;
+  }
+  .tableItem:nth-last-child(1)::after {
+    background-color: transparent;
+  }
+}
+.trademarkShow {
+  padding: 20rpx 30rpx;
+  background: #f2f4f5;
+  min-height: calc(100vh - 90rpx - 26rpx - 82rpx - 300rpx);
+  .trademarks {
+    margin-top: 20rpx;
+    .trademarkItem {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 30rpx;
+      background-color: #fff;
+      border-radius: 12px;
+      margin-bottom: 20rpx;
+      .photos {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150rpx;
+        height: 150rpx;
+        border: 1px solid #eee;
+        image {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      .message {
+        padding-left: 30rpx;
+        box-sizing: border-box;
+        width: calc(100% - 150rpx);
+        .keyword {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 15rpx 0;
+          width: 100%;
+          .tname {
+            width: 70%;
+            font-size: 32rpx;
+            font-weight: 600;
+            color: #292929;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          .tstatus {
+            width: 30%;
+            padding: 5rpx 10rpx;
+            text-align: center;
+          }
+        }
+        // 每个单行的
+        .type,
+        .application,
+        .status {
+          font-size: 24rpx;
+          font-weight: 400;
+          color: #969696;
+          margin-bottom: 16rpx;
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        // 单独处理单个的
+        .type {
+          display: flex;
+          align-items: center;
+          text {
+            background: #ecf1ff;
+            color: #1247fc;
+            font-size: 20rpx;
+            padding: 10rpx 20rpx;
+            border-radius: 5rpx;
+          }
+        }
+        .tworow {
+          padding-bottom: 20rpx;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text {
+            font-size: 24rpx;
+            color: #969696;
+            max-width: 50%;
+          }
+        }
+      }
+      .statusBox {
+        position: absolute;
+        padding: 7rpx 10rpx;
+        right: 10rpx;
+        top: 83rpx;
+        font-size: 20rpx;
+        color: RGBA(0, 150, 255, 1);
+        line-height: 40rpx;
+        border-radius: 10rpx;
+        border: 1rpx solid RGBA(0, 150, 255, 1);
+      }
+    }
+  }
+}
+.nodata {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  image {
+    width: 328rpx;
+    height: 165rpx;
+  }
+}
+// ---------------------华丽的分割线-----------------------------
+// 风险盒子 开始
+.risk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #e3e9ff;
+  border-bottom: 30rpx solid #f2f4f5;
+  padding: 15rpx 25rpx;
+  // 左侧两个风险
+  .flbox {
+    display: flex;
+    align-items: center;
+    // 低风险
+    .low {
+      display: flex;
+      flex: 4;
+      text {
+        color: #18b81b;
+        font-size: 22rpx;
+        padding-right: 20rpx;
+      }
+      .ring {
+        display: flex;
+        .circle {
+          width: 36rpx;
+          height: 36rpx;
+          background: linear-gradient(180deg, #35dd3a 0%, #18b81b 100%);
+          text-align: center;
+          font-size: 22rpx;
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 36rpx;
+          border-radius: 50%;
+        }
+        .circle:nth-last-child(1) {
+          margin-left: 10rpx;
+          line-height: 20rpx;
+        }
+      }
+    }
+    // 高风险
+    .high {
+      padding-left: 20rpx;
+      display: flex;
+      flex: 4;
+      text {
+        color: #f46347;
+        font-size: 22rpx;
+        margin-right: 20rpx;
+      }
+      .ring {
+        display: flex;
+        .circle {
+          width: 36rpx;
+          height: 36rpx;
+          background: linear-gradient(180deg, #ff7258 0%, #ff5332 100%);
+          text-align: center;
+          font-size: 22rpx;
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 36rpx;
+          border-radius: 50%;
+        }
+        .circle:nth-last-child(1) {
+          margin-left: 10rpx;
+          line-height: 20rpx;
+        }
+      }
+    }
+  }
+  // 右侧分析报告
+  .frbox {
+    padding: 20rpx 0;
+    background: -pink;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .text {
+      font-size: 24rpx;
+      color: #1247fc;
+    }
+    .iconfont {
+      font-size: 24rpx;
+      color: #1247fc;
+    }
+  }
+}
+// 风险盒子 结束
+// 风险遮罩 开始
+.riskMask {
+  .twos {
+    .ring {
+      filter: blur(3rpx);
+    }
+  }
+}
+// 风险遮罩 结束
+// ---------------------华丽的分割线-----------------------------
+// 搜索框
+#topSearchBox {
+  .topSearchBox2 {
+    padding: 30rpx 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      width: 19.7%;
+      height: 80rpx;
+      background: #eff0f2;
+      .pickOnly {
+        border: 1px solid red;
+        height: 80rpx;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .text {
+          font-size: 24rpx;
+          color: #2a2c43;
+        }
+        .iconfont {
+          font-size: 24rpx;
+          color: #2a2c43;
+          transform: rotate(90deg);
+        }
+      }
+    }
+    .right {
+      width: 79.7%;
+      .searchBox {
+        ::v-deep .searchBox2 {
+          width: 100% !important;
+          .fls {
+            width: 80%;
+          }
+          .frs {
+            display: inline-flex;
+            justify-content: center;
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+}
+// ---------------------华丽的分割线-----------------------------
+.threeSelect {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20rpx 30rpx;
+  background: #fff;
+  .pickItem {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 20rpx;
+    overflow: hidden;
+  }
+  .pickOnly {
+    height: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* #ifdef MP-ALIPAY */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 20rpx;
+    overflow: hidden;
+    /* #endif */
+    .t1 {
+      color: #333;
+      max-width: 90%;
+      font-size: 20rpx;
+    }
+    .t2 {
+      color: #333;
+      padding-left: 5rpx;
+      font-size: 28rpx;
+    }
+  }
+}
+// ---------------------华丽的分割线-----------------------------
+page {
+  padding-top: 140rpx;
+}
+// 查商标的搜索框
+.queryPageSearch {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+  background: #202133;
+  height: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .queryPageSearch2 {
+    border-radius: 10rpx;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    .fls {
+      width: calc(100% - 130rpx);
+      height: 80rpx;
+      display: flex;
+      .fl1 {
+        width: 30%;
+        .pickOnly {
+          height: 80rpx;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border: 0px solid red;
+          border-right: 1px solid #f5f5f5;
+          &::before,
+          &::after {
+            content: '';
+            display: block;
+          }
+          .text {
+            font-size: 24rpx;
+            color: #2a2c43;
+          }
+          .iconfont {
+            font-size: 24rpx;
+            color: #2a2c43;
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .fl2 {
+        width: 70%;
+        .inputClass {
+          height: 80rpx;
+          line-height: 80rpx;
+          font-size: 28rpx;
+          color: #2a2c43;
+          padding-left: 20rpx;
+        }
+        .placeClass {
+          height: 80rpx;
+          line-height: 80rpx;
+          font-size: 28rpx;
+          color: #2a2c43;
+        }
+      }
+    }
+    .frs {
+      width: 130rpx;
+      height: 80rpx;
+      background: #3f425d;
+      color: #ffd698;
+      font-size: 28rpx;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+// ---------------------华丽的分割线-----------------------------
+// 右侧的文字不同显示的区域颜色也不同---注册公告
+.regNoticeClass {
+  background: rgba(64, 137, 234, 0.1);
+  color: #4089ea;
+}
+// 右侧的文字不同显示的区域颜色也不同---已注册
+.ifHasRegClass {
+  background: rgba(29, 185, 81, 0.1);
+  color: #1db951;
+}
+// 右侧的文字不同显示的区域颜色也不同---申请中+暂无
+.otherClass {
+  background: rgba(144, 147, 153, 0.1);
+  color: #909399;
+}
+// 右侧的文字不同显示的区域颜色也不同---已驳回
+.ifHasCancelClass {
+  background: rgba(245, 108, 108, 0.1);
+  color: #f56c6c;
+}

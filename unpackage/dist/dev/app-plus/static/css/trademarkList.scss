@@ -1,0 +1,136 @@
+// 列表大全
+.classQueryList {
+  .classQueryList2 {
+    // 1
+    .list1 {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .fls {
+        width: calc(100% - 530rpx);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        image {
+          width: 70rpx;
+          height: 70rpx;
+          border: 1px solid #eee;
+        }
+      }
+      .frs {
+        width: 530rpx;
+        .fr1 {
+          width: 100%;
+          font-size: 28rpx;
+          color: $thecol;
+          padding-bottom: 25rpx;
+        }
+        .fr2 {
+          width: 100%;
+          font-size: 22rpx;
+          color: #989898;
+          line-height: 30rpx;
+          height: 90rpx;
+        }
+      }
+    }
+    // 2
+    .list2 {
+      padding-bottom: 50rpx;
+      .itembox {
+        padding: 30rpx 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2rpx solid #e7f0ff;
+        &:first-child {
+          border-top: none;
+        }
+        &:active {
+          .fl1 {
+            color: $thecol !important;
+          }
+          .fl2 {
+            color: $thecol !important;
+          }
+        }
+        .fls {
+          width: 85%;
+          display: flex;
+          .fl1 {
+            transition: color 0.3s;
+            font-size: 26rpx;
+            color: #989898;
+            background: -pink;
+            width: 20%;
+          }
+          .fl2 {
+            transition: color 0.3s;
+            font-size: 26rpx;
+            color: #3f3f3f;
+            background: -orange;
+            width: 80%;
+            text-align: justify;
+          }
+        }
+        .frs {
+          width: 15%;
+          background: -red;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          .iconfont {
+            transition: color 0.3s;
+            color: #c8c8ca;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+// 详情的列表大全
+.classDetailList {
+  .classDetailList2 {
+    // 1
+    .list1 {
+      padding-bottom: 30rpx;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .fls {
+        width: 15%;
+        font-size: 26rpx;
+        color: $thecol;
+      }
+      .frs {
+        width: 85%;
+        font-size: 26rpx;
+        color: $thecol;
+        text-align: justify;
+      }
+    }
+    // 2
+    .list2 {
+      .itembox {
+        border-top: 2rpx solid #e7f0ff;
+        padding: 30rpx 0;
+        display: flex;
+        padding-left: 15%;
+        .fls {
+          width: 20%;
+          font-size: 26rpx;
+          color: #989898;
+        }
+        .frs {
+          padding-left: 5%;
+          width: 80%;
+          text-align: justify;
+          font-size: 26rpx;
+          color: #3f3f3f;
+        }
+      }
+    }
+  }
+}

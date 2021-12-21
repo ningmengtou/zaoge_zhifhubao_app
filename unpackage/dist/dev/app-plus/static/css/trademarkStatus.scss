@@ -1,0 +1,136 @@
+page {
+  background: #f2f4f5;
+}
+
+.searchsBox {
+  background-color: #fff;
+  padding: 15rpx 0;
+}
+
+.sketchMap {
+  width: 100%;
+  height: 394rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+  padding: 40rpx;
+  margin-top: 20rpx;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 32rpx;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 600;
+      color: #292929;
+      line-height: 32rpx;
+    }
+
+    .time {
+      font-size: 26rpx;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #969696;
+      line-height: 26rpx;
+    }
+  }
+
+  .tName {
+    margin-top: 40rpx;
+    border-bottom: 1rpx solid #ebebeb;
+
+    text {
+      font-size: 26rpx;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #969696;
+      line-height: 26rpx;
+    }
+
+    .name {
+      font-size: 32rpx;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #292929;
+      line-height: 36rpx;
+      margin: 20rpx 0 40rpx 0;
+    }
+  }
+
+  .more {
+    display: flex;
+
+    .number,
+    .type {
+      flex: 1;
+
+      text {
+        font-size: 26rpx;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #969696;
+        line-height: 26rpx;
+        margin: 40rpx 0 20rpx 0;
+      }
+
+      .key {
+        font-size: 32rpx;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #292929;
+        line-height: 36rpx;
+      }
+    }
+  }
+}
+
+.process {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+  border-radius: 16px;
+  padding: 40rpx;
+}
+
+.save {
+  width: 702rpx;
+  height: 88rpx;
+  background: linear-gradient(230deg, #297dfe 0%, #1247fc 100%);
+  border-radius: 44rpx;
+  text-align: center;
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 88rpx;
+  margin: 50rpx auto;
+}
+
+.bigBox {
+  position: relative;
+  .main {
+    position: relative;
+    filter: blur(1.5px);
+  }
+  .btn {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30rpx;
+    color: #fff;
+    background: #1e9fff;
+    padding:  15rpx;
+    border-radius: 10rpx;
+  }
+}
+.hiden {
+  .main {
+    filter: inherit !important;
+  }
+  .btn {
+    display: none;
+  }
+}

@@ -1,0 +1,248 @@
+// 复制的陈同志的代码 开始
+.topBg {
+  text-align: center;
+  width: 100%;
+  height: 600rpx;
+  padding-top: 100rpx;
+  .title {
+    font-size: 64rpx;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 70rpx;
+    text-shadow: 0px 2rpx 4rpx #002faa;
+    margin: 0rpx 0 22rpx 48rpx;
+  }
+  .des {
+    font-size: 28rpx;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 40rpx;
+    margin-left: 48rpx;
+  }
+}
+.form {
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+  width: 700rpx;
+  background-color: #fff;
+  padding: 40rpx 25rpx;
+  margin: auto;
+  border-radius: 10rpx;
+  margin-top: -300rpx;
+  margin-bottom: 50rpx;
+  .inputBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90rpx;
+    background: red;
+    margin-bottom: 30rpx;
+    background: #f5f5f5;
+    .text {
+      width: 150rpx;
+      color: black;
+      font-size: 28rpx;
+      text-align: center;
+      border-right: 1px solid #e6e6e6;
+    }
+    .input {
+      width: calc(100% - 150rpx);
+      padding-left: 40rpx;
+      font-size: 28rpx;
+      height: 50rpx;
+      line-height: 50rpx;
+      background: #f5f5f5;
+    }
+    .place {
+      height: 50rpx;
+      line-height: 50rpx;
+    }
+  }
+  .tips {
+    color: #ff995a;
+    font-size: 27rpx;
+    margin: 30rpx 0;
+    .iconfont {
+      color: #ff995a;
+      margin-right: 10rpx;
+    }
+  }
+  .consult {
+    width: 100%;
+    height: 75rpx;
+    line-height: 75rpx;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(230deg, #f94a36 0%, #f74134 100%);
+    border-radius: 50rpx;
+  }
+  .threeBox {
+    padding-top: 30rpx;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .items {
+      display: inline-flex;
+      align-items: center;
+      .iconfont {
+        color: #aaa;
+        font-size: 24rpx;
+      }
+      .text {
+        padding-left: 10rpx;
+        color: #aaa;
+        font-size: 24rpx;
+      }
+    }
+  }
+}
+// 复制的陈同志的代码 结束
+// ----------华丽的分割线-----------------------
+// 金牌顾问 
+.goldConsultant {
+	/* #ifdef MP-ALIPAY */
+	margin-top: -300rpx;
+	/* #endif */
+  background: #f2f4f5;
+  padding-bottom: 60rpx;
+  .goldConsultant2 {
+    .listbox {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .itembox {
+        padding: 30rpx;
+        width: 336rpx;
+        background: #ffffff;
+        box-shadow: 0px 2px 8px 4px rgba(224, 230, 233, 1);
+        border-radius: 10px;
+        margin-top: 30rpx;
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+        .v1 {
+          padding-bottom: 30rpx;
+          display: flex;
+          justify-content: center;
+          image {
+            width: 130rpx;
+            height: 130rpx;
+            border-radius: 100%;
+          }
+        }
+        .v2 {
+          font-size: 30rpx;
+          color: #3e3e3e;
+          text-align: center;
+        }
+        .v3 {
+          padding: 30rpx 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          text {
+            margin: 0 10rpx;
+            font-size: 20rpx;
+            color: #1247fc;
+            background: #e3edff;
+            border: 1px solid #2676fe;
+            width: 100rpx;
+            height: 36rpx;
+            border-radius: 36rpx;
+            line-height: 36rpx;
+            text-align: center;
+          }
+        }
+        .v4 {
+          font-size: 20rpx;
+          color: #969696;
+          height: 60rpx;
+          line-height: 30rpx;
+        }
+        .v5 {
+          padding-top: 30rpx;
+          .comBtnBox {
+            view {
+              width: 200rpx;
+              height: 50rpx;
+              line-height: 50rpx;
+              border-radius: 50rpx;
+              font-size: 22rpx;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 最新顾问回复
+.consultantResponse {
+  padding-bottom: 60rpx;
+  background: #fff;
+  .consultantResponse2 {
+    .listbox {
+      border-left: 1px solid #eee;
+      padding-left: 30rpx;
+      .itembox {
+        padding-top: 30rpx;
+        &:first-child {
+          padding-top: 0;
+        }
+        .v1 {
+          width: 100%;
+          padding-bottom: 25rpx;
+          position: relative;
+          .text {
+            font-size: 24rpx;
+            color: #999;
+          }
+          .timeyuan {
+            position: absolute;
+            top: 4rpx;
+            left: -44rpx;
+            font-size: 30rpx;
+            color: #999;
+          }
+        }
+        .v2 {
+          text-align: justify;
+          font-size: 28rpx;
+          color: #2a2a2a;
+          padding-bottom: 25rpx;
+        }
+        .v3 {
+          background: #e4efff;
+          padding: 20rpx;
+          width: 100%;
+          display: flex;
+          .fls {
+            width: 80rpx;
+            image {
+              width: 80rpx;
+              height: 80rpx;
+              border-radius: 100%;
+            }
+          }
+          .frs {
+            width: calc(100% - 80rpx);
+            padding-left: 30rpx;
+            text-align: justify;
+            text {
+              font-size: 24rpx;
+              color: #999;
+              display: inline;
+            }
+            .t1 {
+              font-weight: 700;
+              padding-right: 20rpx;
+            }
+          }
+        }
+      }
+    }
+  }
+}

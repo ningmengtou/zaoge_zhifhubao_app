@@ -1,0 +1,72 @@
+// 单个bar提示
+.singleBar {
+  background: #e3e9ff;
+  .singleBar2 {
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    text {
+      font-size: 22rpx;
+      color: $thecol;
+      padding-left: 30rpx;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+// 列表大全
+.myQueryList {
+  padding-bottom: 50rpx;
+  .myQueryList2 {
+    .v1 {
+      padding: 40rpx 0;
+      border-bottom: 1px solid #e7f0ff;
+      color: $thecol;
+      font-size: 35rpx;
+    }
+    .v2 {
+      padding: 20rpx 0;
+      border-bottom: 1px solid #e7f0ff;
+      display: flex;
+	  flex-direction: column;
+      justify-content: space-between;
+      view {
+        color: #3f3f3f;
+        font-size: 24rpx;
+      }
+	  .middle {
+		  display: flex;
+		  margin-bottom: 20rpx;
+		  .v2fl {
+		    display: flex;
+		    justify-content: flex-end;
+		    width: 20%;
+			font-size: 30rpx;
+		  }
+		  .v2fr {
+		    width: 80%;
+		    padding-left: 2em;
+			font-size: 30rpx;
+		  }
+	  }
+	  .lastChild {
+		  display: flex;
+		  padding: 20rpx 0;
+		  border-bottom: 1rpx solid #FF9600;
+		  margin-left: 28%;
+		  .lastChildgroup {
+			  color: #134BFC;
+			  margin-right: 2em;
+			  font-size: 25rpx;
+		  }
+		  .lastChildname {
+			  color: #3f3f3f;
+			  font-size: 25rpx;
+		  }
+	  }
+   
+    }
+   
+  }
+}

@@ -1,0 +1,549 @@
+.trademarkTop {
+  display: flex;
+  align-items: center;
+  width: 690rpx;
+  padding: 30px 0;
+  margin: 40rpx auto;
+  background: linear-gradient(187deg, #4b5269 0%, #2d3246 100%);
+  border-radius: 12rpx;
+  .imageBox {
+    width: 125rpx;
+    height: 125rpx;
+    margin: 0 25rpx;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    overflow: hidden;
+    image {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .more {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .keyword {
+      font-size: 32rpx;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 32rpx;
+    }
+    .reg {
+      font-size: 24rpx;
+      font-weight: 400;
+      color: #e73c15;
+      line-height: 24rpx;
+      margin: 30rpx 0;
+    }
+    .message {
+      display: flex;
+      align-items: center;
+      font-size: 24rpx;
+      font-weight: 400;
+      line-height: 24rpx;
+      .type,
+      .number {
+        color: #fff;
+        margin-right: 25rpx;
+      }
+    }
+  }
+}
+.trademarkmeaning,
+.trademarkDescription {
+  width: 100%;
+  padding: 35rpx 40rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+  margin-bottom: 30rpx;
+  .title {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #292929;
+    line-height: 32rpx;
+    margin-bottom: 35rpx;
+  }
+  .message {
+    text-align: justify;
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #969696;
+    line-height: 40rpx;
+  }
+}
+.trademarkList {
+  width: 100%;
+  padding: 35rpx 40rpx;
+  padding-bottom: 0;
+  margin-bottom: 30rpx;
+  background: #ffffff;
+  .title {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #292929;
+    line-height: 32rpx;
+  }
+  .list {
+    .listItem {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding-bottom: 40rpx;
+      margin-top: 40rpx;
+      border-bottom: #ebebeb solid 2rpx;
+      .itemImage {
+        width: 124rpx;
+        height: 124rpx;
+        box-sizing: border-box;
+        padding: 1px;
+        border: 1px solid #eee;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        image {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      .more {
+        width: calc(100% - 124rpx);
+        padding-left: 30rpx;
+        .title {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          .keyword {
+            width: 60%;
+            font-size: 26rpx;
+            color: #444;
+          }
+          .other {
+            width: 40%;
+            text-align: right;
+            font-size: 22rpx;
+            color: #666;
+          }
+        }
+        .message {
+          display: flex;
+          align-items: center;
+          font-size: 24rpx;
+          font-weight: 400;
+          line-height: 24rpx;
+          margin: 25rpx 0;
+          .type,
+          .number {
+            margin-right: 25rpx;
+          }
+        }
+        .date {
+          font-size: 24rpx;
+          font-weight: 400;
+          color: #292929;
+          line-height: 24rpx;
+        }
+      }
+    }
+    .listItem:last-child {
+      border-bottom: none;
+    }
+  }
+}
+.bulletin {
+  width: 100%;
+  padding: 35rpx 40rpx;
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 30rpx;
+
+  .title {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #292929;
+    line-height: 32rpx;
+  }
+
+  .bulletinList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .bulletinItem {
+      width: 50%;
+      border-bottom: 2rpx solid #ebebeb;
+      margin-top: 40rpx;
+      &:last-child {
+        border-bottom: none;
+      }
+      .bulletinTop {
+        font-size: 26rpx;
+        font-weight: 400;
+        color: #969696;
+        line-height: 26rpx;
+      }
+      .bulletinBottom {
+        font-size: 26rpx;
+        font-weight: 400;
+        color: #292929;
+        line-height: 26rpx;
+        margin: 20rpx 0;
+        .strToArrTxt {
+          text-align: center;
+          display: block;
+          width: 50%;
+          font-size: 24rpx;
+          color: #666;
+          padding: 10rpx 20rpx;
+          line-height: 40rpx;
+          text-align: justify;
+          border-bottom: 1px solid #eee;
+          &:nth-child(1) {
+            border-top: 1px solid #eee;
+          }
+          &:nth-child(2) {
+            border-top: 1px solid #eee;
+          }
+          &:nth-child(odd) {
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+          }
+          &:nth-child(even) {
+            border-right: 1px solid #eee;
+          }
+        }
+      }
+    }
+    .width100 {
+      width: 100%;
+      border-bottom: none;
+      margin-top: 20rpx;
+      .flex100 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text {
+          display: inline-flex !important;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .lineheight {
+        text-align: justify;
+        line-height: 40rpx;
+      }
+    }
+  }
+}
+.process {
+  width: 100%;
+  padding: 35rpx 40rpx;
+  background: #ffffff;
+  margin-bottom: 30rpx;
+  .title {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #292929;
+    line-height: 32rpx;
+    margin-bottom: 30rpx;
+  }
+}
+.operating {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120rpx;
+  padding: 0 40rpx;
+  background: #ffffff;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+  &::before {
+    content: '';
+    display: block;
+  }
+  &::after {
+    content: '';
+    display: block;
+  }
+  .newTrademark,
+  .buyTrademark,
+  .guwen {
+    width: 180rpx;
+    height: 70rpx;
+    background: #00bb02;
+    border-radius: 40rpx;
+    text-align: center;
+    line-height: 70rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .buyTrademark {
+    background: linear-gradient(230deg, #297dfe 0%, #1247fc 100%);
+  }
+  .guwen {
+    background: linear-gradient(230deg, #e73c15 0%, #e76315 100%);
+  }
+}
+.noTrademark {
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #969696;
+  line-height: 52rpx;
+  margin-top: 30rpx;
+}
+// ---------------------------黄老师大幅度改版--------------------------------------------
+
+// 当前页面
+page {
+  background: #f5f5f5;
+}
+// 新版的头部带背景的区域
+.queryDetailNewTop {
+  width: 100%;
+  padding: 40rpx 0 100rpx;
+  .queryDetailNewTop2 {
+    display: flex;
+    .fls {
+      width: 150rpx;
+      height: 150rpx;
+      overflow: hidden;
+      border-radius: 5rpx;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+    .frs {
+      width: calc(100% - 150rpx);
+      padding-left: 30rpx;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .fr1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .t1 {
+          font-size: 36rpx;
+          color: $thecolYellow;
+          max-width: 60%;
+        }
+        .t2 {
+          background: #1db951;
+          font-size: 22rpx;
+          color: #fff;
+          padding: 10rpx 20rpx;
+          border-radius: 5rpx;
+        }
+      }
+      .fr2 {
+        font-size: 24rpx;
+        color: #b7bbd5;
+      }
+      .fr3 {
+        font-size: 24rpx;
+        color: #b7bbd5;
+      }
+    }
+  }
+}
+// 新版的公共类详情页面的标题文字
+.queryDetailTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+  .t1 {
+    height: 30rpx;
+    width: 8rpx;
+    background: #ff5700;
+    border-radius: 8rpx;
+  }
+  .t2 {
+    color: #2a2c43;
+    font-size: 36rpx;
+    padding-left: 10rpx;
+  }
+}
+
+// 新版的区域模块之基本信息
+.queryDetailInfo {
+  border-top: 30rpx solid #f5f5f5;
+  background: #fff;
+  padding-bottom: 30rpx;
+  .itembox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12rpx 0;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    .fls {
+      width: 25%;
+      font-size: 28rpx;
+      color: #2a2c43;
+      border: 0px solid red;
+    }
+    .frs {
+      width: 75%;
+      text-align: right;
+      font-size: 25rpx;
+      color: #7f8494;
+    }
+  }
+}
+// 新版的区域模块之商品信息
+.queryDetailList {
+  background: #fff;
+  border-top: 30rpx solid #f5f5f5;
+  padding-bottom: 40rpx;
+  .queryDetailList2 {
+    .itembox {
+      width: 100%;
+      padding: 12rpx 0;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+      .fls {
+        width: 100%;
+        font-size: 28rpx;
+        color: #2a2c43;
+        border: 0px solid red;
+        padding-bottom: 20rpx;
+      }
+      .frs {
+        width: 100%;
+        font-size: 28rpx;
+        color: #7f8494;
+        display: flex;
+        flex-wrap: wrap;
+        text {
+          border: 1px solid #f5f5f5;
+          width: 50%;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10rpx 0;
+        }
+      }
+    }
+  }
+}
+// 新版的区域模块之商标说明
+.queryDetailText {
+  background: #fff;
+  border-top: 30rpx solid #f5f5f5;
+  border-bottom: 30rpx solid #f5f5f5;
+  padding-bottom: 40rpx;
+  .itembox {
+    text-align: justify;
+    line-height: 40rpx;
+    font-size: 26rpx;
+    color: #2a2c43;
+  }
+}
+// 当前申请人申请同名商标
+.chaoTongMingBox {
+  padding-top: 0rpx;
+  padding-bottom: 30rpx;
+  margin-bottom: 0;
+  .queryDetailTitle {
+    padding-bottom: 0;
+  }
+}
+// 商标状态流程
+.chaoLiuChenBox {
+  border-top: 30rpx solid #f5f5f5;
+  padding-top: 0rpx;
+  padding-bottom: 30rpx;
+  margin: 0;
+  margin-bottom: 40rpx;
+}
+// 吸顶的导航 1/4
+.xiDingMenu {
+  width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  margin-top: -50rpx;
+  .xiDingMenu2 {
+    background: linear-gradient(to right, #363a5d, #555882);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10rpx;
+    .itembox {
+      transition: all 0.3s;
+      height: 100rpx;
+      flex: 1;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24rpx;
+      color: #b7bbd5;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 4rpx;
+        border-radius: 4rpx;
+        bottom: 20rpx;
+        background: transparent;
+        transition: background 0.3s;
+      }
+    }
+    .itembox.on {
+      color: #ffd698;
+      &::after {
+        background: #ffd698;
+      }
+    }
+  }
+}
+// 吸顶的导航 2/4
+.xiDingMenu.on {
+  background: linear-gradient(to right, #363a5d, #555882);
+  .xiDingMenu2 {
+    background: none;
+  }
+}
+// 吸顶的导航 3/4
+.ifHasFixBotBar {
+  padding-top: 0;
+}
+// 吸顶的导航 4/4
+.ifHasFixBotBar.on {
+  padding-top: 100rpx;
+}
+// 解答的按钮
+.jieDaBtn {
+  position: absolute;
+  right: 0;
+  top: 24rpx;
+  width: 288rpx !important;
+  height: 52rpx !important;
+  image {
+    width: 100%;
+    height: 100%;
+  }
+}

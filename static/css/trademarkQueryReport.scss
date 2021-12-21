@@ -1,0 +1,352 @@
+// 当前页面
+.uniBigBox {
+  background: #f2f4f5;
+  padding-bottom: 30rpx;
+}
+// 三个数字显示盒子
+.threeNumbers {
+  padding: 30rpx 0;
+  .threeNumbers2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12rpx;
+    background: #fff;
+    overflow: hidden;
+    height: 200rpx;
+    .itembox {
+      text {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      .t1 {
+        font-size: 64rpx;
+      }
+      .t2 {
+        font-size: 26rpx;
+      }
+      &:nth-child(1) {
+        text {
+          color: $lvfeng;
+        }
+      }
+      &:nth-child(2) {
+        text {
+          color: $zhongfeng;
+        }
+      }
+      &:nth-child(3) {
+        text {
+          color: $gaofeng;
+        }
+      }
+    }
+  }
+}
+// 三个风险的很多小数字的盒子
+.threeRisk {
+  .threeRisk2 {
+    border-radius: 12rpx;
+    background: #fff;
+    overflow: hidden;
+    padding: 0 38rpx 40rpx;
+    // 头部
+    .topbox {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border-bottom: 1rpx solid #f5f5f5;
+      margin-bottom: 38rpx;
+      .fls,
+      .frs {
+        padding: 38rpx 0;
+      }
+      .fls {
+        width: 30%;
+      }
+      .frs {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        text {
+          color: #292929;
+          font-size: 26rpx;
+          display: inline-flex;
+          justify-content: flex-end;
+        }
+        .t1 {
+          width: 90%;
+        }
+        .t2 {
+          width: 10%;
+        }
+      }
+    }
+    // 单条
+    .everybox {
+      width: 100%;
+      display: flex;
+      .fls {
+        width: calc(100% - 520rpx);
+        display: flex;
+        text {
+          display: block;
+          text-align: center;
+          width: 100%;
+          writing-mode: tb-rl;
+          font-size: 26rpx;
+          width: 35rpx;
+        }
+      }
+      .frs {
+        width: 520rpx;
+        padding: 38rpx;
+        min-height: 200rpx;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .text {
+          width: 36rpx;
+          height: 36rpx;
+          border-radius: 100%;
+          overflow: hidden;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          margin-left: 20rpx;
+          margin-bottom: 20rpx;
+          font-size: 22rpx;
+        }
+        .nodata {
+          color: #666;
+          background: none !important;
+        }
+      }
+    }
+    .everybox1 {
+      .fls {
+        text {
+          color: $lvfeng;
+        }
+      }
+      .frs {
+        background: #fafbff;
+        text {
+          background: $lvfeng;
+        }
+      }
+    }
+    .everybox2 {
+      .fls {
+        text {
+          color: $zhongfeng;
+        }
+      }
+      .frs {
+        background: #f3f3ff;
+        text {
+          background: $zhongfeng;
+        }
+      }
+    }
+    .everybox3 {
+      .fls {
+        text {
+          color: $gaofeng;
+        }
+      }
+      .frs {
+        background: #e9effd;
+        text {
+          background: $gaofeng;
+        }
+      }
+    }
+    // 更多
+    .morebox {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .onlyClick {
+        padding: 38rpx;
+        .t1 {
+          font-size: 22rpx;
+          color: #969696;
+        }
+        .t2 {
+          font-size: 22rpx;
+          color: $thecol;
+        }
+      }
+    }
+  }
+}
+// 建议注册类别
+.regCategory {
+  padding-top: 30rpx;
+  .regCategory2 {
+    border-radius: 12rpx;
+    background: #fff;
+    overflow: hidden;
+    // 1
+    .topbox {
+      height: 96rpx;
+      background: $lvfeng;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30rpx;
+      .t1 {
+        font-size: 26rpx;
+        color: #fff;
+      }
+      .t2 {
+        font-size: 22rpx;
+        color: #fff;
+      }
+    }
+    // 2
+    .containbox {
+      padding: 30rpx;
+      .t1box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30rpx;
+        .fls {
+          font-size: 28rpx;
+          color: #292929;
+          max-width: 60%;
+        }
+        .frs {
+          display: flex;
+          align-items: center;
+          text {
+            font-size: 22rpx;
+            color: $lvfeng;
+          }
+        }
+      }
+      .t2box {
+        overflow: hidden;
+        text {
+          margin-left: 30rpx;
+          font-size: 24rpx;
+          color: #292929;
+          float: left;
+          padding-bottom: 30rpx;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+      .t3box {
+        .itembox {
+          border-bottom: 1rpx solid #f5f5f5;
+          padding: 20rpx 0;
+          &:last-child {
+            border-bottom: none;
+          }
+          .t1box {
+            padding-bottom: 0;
+          }
+          .onlytext {
+            padding-top: 10rpx;
+            font-size: 24rpx;
+            color: #969696;
+            text {
+              color: #333;
+              padding-right: 10rpx;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 建议注册类别(第二份)
+.regCategoryB {
+  .regCategory2 {
+    .topbox {
+      background: $zhongfeng;
+    }
+    .containbox {
+      .t1box {
+        .frs {
+          text {
+            color: $gaofeng;
+          }
+        }
+      }
+    }
+  }
+}
+// 建议注册类别(第三份)
+.regCategoryC {
+  .regCategory2 {
+    .topbox {
+      background: $gaofeng;
+    }
+    .containbox {
+      .t1box {
+        .frs {
+          text {
+            color: $gaofeng;
+          }
+        }
+      }
+    }
+  }
+}
+// 近似商标状态统计的echarts图表
+.echartsTest {
+  padding-top: 30rpx;
+  .echartsTest2 {
+    border-radius: 12rpx;
+    background: #fff;
+    overflow: hidden;
+    padding: 40rpx;
+    position: relative;
+    z-index: 9;
+    .titbox {
+      font-size: 28rpx;
+      color: #12204f;
+      padding-bottom: 40rpx;
+    }
+    .contbox {
+      height: 300rpx;
+      width: 100%;
+      overflow: hidden;
+      filter: blur(2px);
+    }
+    .goToBtn {
+      position: absolute;
+      z-index: 10;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 25rpx;
+      color: #fff;
+      background: #1e9fff;
+      padding:  25rpx;
+      border-radius: 10rpx;
+    }
+  }
+  // 如果登录了，那么就加hideMe的class，从而取消遮罩的遮挡
+  .echartsTest2.hideMe {
+    .contbox {
+      filter: inherit !important;
+    }
+    .goToBtn {
+      display: none !important;
+    }
+  }
+}
+
+

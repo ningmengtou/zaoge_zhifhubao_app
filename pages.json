@@ -1,0 +1,278 @@
+{
+  "pages": [
+    // ---------------------------四个tabbar页面------------------------------------------
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页", //标题文字内容
+        "navigationStyle": "custom", //是否启用原生导航,仅支持 default/custom
+        "app-plus": {
+          "titleView": false
+        }
+      }
+    },
+    {
+      "path": "pages/index2/index2",
+      "style": {
+        "navigationBarTitleText": "商标库", //标题文字内容
+        "navigationStyle": "default", //是否启用原生导航,仅支持 default/custom
+		"onReachBottomDistance": 300
+      }
+    },
+    {
+      "path": "pages/index3/index3",
+      "style": {
+        "navigationBarTitleText": "顾问", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index3/onlineService",
+      "style": {
+        "navigationBarTitleText": "在线留言", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index4/index4",
+      "style": {
+        "navigationBarTitleText": "我的", //标题文字内容
+        "navigationStyle": "custom" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    // ---------------------------首页的【商标分类】 开始------------------------------------------
+    {
+      "path": "pages/trademarkClassify/trademarkClassify",
+      "style": {
+        "navigationBarTitleText": "商标分类", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/trademarkClassify/trademarkClassifyQuery",
+      "style": {
+        "navigationBarTitleText": "商标分类查询", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/trademarkClassify/trademarkList",
+      "style": {
+        "navigationBarTitleText": "商标分类列表", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/trademarkClassify/trademarkDetail",
+      "style": {
+        "navigationBarTitleText": "商标分类详情", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    // ---------------------------首页的【商标分类】 结束------------------------------------------
+    // ---------------------------首页的【区域统计】------------------------------------------
+    {
+      "path": "pages/index/trademarkArea1",
+      "style": {
+        "navigationBarTitleText": "区域统计", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+	{
+	  "path": "pages/index/regFast",
+	  "style": {
+	    "navigationBarTitleText": "快速注册", //标题文字内容
+	    "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+	  }
+	},
+    {
+      "path": "pages/index/trademarkArea2",
+      "style": {
+        "navigationBarTitleText": "区域统计", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    // ---------------------------首页的三个tab选项卡------------------------------------------
+    {
+      "path": "pages/trademarkQuery/trademarkQuery",
+      "style": {
+        "navigationBarTitleText": "商标查询", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/trademarkQuery/trademarkQueryReport",
+      "style": {
+        "navigationBarTitleText": "商标查询报告", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/trademarkSource/trademarkSource",
+      "style": {
+        "navigationBarTitleText": "商标购买", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/trademarkSource/trademarkSourceDetail",
+      "style": {
+        "navigationBarTitleText": "商标购买详情", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/trademarkQuery/trademarkQueryDetail",
+      "style": {
+        "navigationBarTitleText": "商标查询详情", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/trademarkReg/trademarkReg",
+      "style": {
+        "navigationBarTitleText": "注册成功率", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/trademarkReg/trademarkRegAnalyze",
+      "style": {
+        "navigationBarTitleText": "注册成功率分析", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    // ---------------------------商标服务的文件夹------开始------------------------------------
+    {
+      "path": "pages/trademarkService/trademarkServiceMore",
+      "style": {
+        "navigationBarTitleText": "服务", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/trademarkService/service",
+      "style": {
+        "navigationBarTitleText": "商标服务", //标题文字内容
+        "navigationStyle": "custom" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    // ---------------------------商标服务的文件夹------结束------------------------------------
+    {
+      "path": "pages/index4/userAgreement",
+      "style": {
+        "navigationBarTitleText": "用户协议", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index4/privacyClause",
+      "style": {
+        "navigationBarTitleText": "隐私政策", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index/trademarkStatus",
+      "style": {
+        "navigationBarTitleText": "商标状态", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index/trademarkAdviser",
+      "style": {
+        "navigationBarTitleText": "商标顾问", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index/legalService",
+      "style": {
+        "navigationBarTitleText": "法律服务", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index/announcement",
+      "style": {
+        "navigationBarTitleText": "初审公告", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index/announcementDetail",
+      "style": {
+        "navigationBarTitleText": "公告详情", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index4/feedBack",
+      "style": {
+        "navigationBarTitleText": "产品反馈", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index4/logoutService",
+      "style": {
+        "navigationBarTitleText": "注销服务", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    },
+    {
+      "path": "pages/index4/logoutHtml",
+      "style": {
+        "navigationBarTitleText": "注销须知", //标题文字内容
+        "navigationStyle": "default" //是否启用原生导航,仅支持 default/custom
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#202133",
+    "navigationBarTitleText": "早鸽商标查询", //导航标题的文字
+    "navigationStyle": "default", //是否启用原生导航,仅支持default/custom
+    "app-plus": {
+      "titleNView": true, //是否在App上启用原生导航，false就是不要，true就是要
+      "animationType": "fade-in",
+      "animationDuration": 100
+    }
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#E8AE63",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbars/foot1.png",
+        "selectedIconPath": "static/tabbars/foot1h.png",
+        "text": "首页"
+      }, {
+        "pagePath": "pages/trademarkService/trademarkServiceMore",
+        "iconPath": "static/tabbars/foot2.png",
+        "selectedIconPath": "static/tabbars/foot2h.png",
+        "text": "服务"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "iconPath": "static/tabbars/foot3.png",
+        "selectedIconPath": "static/tabbars/foot3h.png",
+        "text": "商标库"
+      },
+      {
+        "pagePath": "pages/index3/index3",
+        "iconPath": "static/tabbars/foot4.png",
+        "selectedIconPath": "static/tabbars/foot4h.png",
+        "text": "顾问"
+      },
+      {
+        "pagePath": "pages/index4/index4",
+        "iconPath": "static/tabbars/foot5.png",
+        "selectedIconPath": "static/tabbars/foot5h.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+/* #ifdef H5 */
+// 减去H5底部的tabbar所占高度(默认H5是50px)
+.uniBigBox {
+  min-height: calc(100vh - 50px);
+}
+/* #endif */
+// 当前页面
+.uniBigBox {
+  padding-bottom: 50rpx;
+}
+// 点击登录
+.loginBox {
+  padding-top: 50rpx;
+  .loginBox2 {
+    display: flex;
+    justify-content: space-between;
+    .fls {
+      width: 120rpx;
+      height: 120rpx;
+      overflow: hidden;
+    }
+    .frs {
+      width: calc(100% - 120rpx);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-left: 30rpx;
+      .v1 {
+        font-size: 40rpx;
+        color: #333333;
+      }
+      .v2 {
+        font-size: 26rpx;
+        color: #b7b7b7;
+      }
+    }
+  }
+}
+// 如果已经登录
+.hasLoginBox {
+  padding-top: 50rpx;
+  .hasLoginBox2 {
+    font-size: 40rpx;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    .t1 {
+      font-size: 40rpx;
+      color: #ef1e25;
+    }
+    .t2 {
+      font-size: 26rpx;
+      color: $thecol;
+    }
+  }
+}
+// 仅仅一张大图
+.onlyBanner {
+  padding-top: 50rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  image {
+    width: 686rpx;
+    height: 236rpx;
+  }
+}
+// 电话客服与在线客服
+.kefuBox {
+  padding-top: 80rpx;
+  .kefuBox2 {
+    display: flex;
+    justify-content: space-around;
+    .itembox {
+		
+      display: flex;
+      .fls {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        text {
+          font-size: 40rpx;
+          color: #999;
+        }
+      }
+      .frs {
+        width: calc(100% - 20rpx);
+        padding-left: 20rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .v1 {
+			font-weight: 600;
+          font-size: 32rpx;
+          color: #333333;
+        }
+        .v2 {
+          font-size: 26rpx;
+          color: #b7b7b7;
+        }
+      }
+    }
+  }
+}
+// 其他工具
+.otherTools {
+  .otherTools2 {
+    .listbox {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .itembox {
+        image {
+          display: block;
+          margin: 0 auto;
+          width: 100rpx;
+          height: 100rpx;
+          border-radius: 100%;
+        }
+        text {
+          padding-top: 15rpx;
+          display: block;
+          text-align: center;
+          font-size: 26rpx;
+          color: #12204f;
+        }
+      }
+    }
+  }
+}
+// 权盾服务
+.quandunService {
+  .quandunService2 {
+    .listbox {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .itembox {
+        image {
+          display: block;
+          margin: 0 auto;
+          width: 72rpx;
+          height: 72rpx;
+        }
+        text {
+          padding-top: 15rpx;
+          display: block;
+          text-align: center;
+          font-size: 26rpx;
+          color: #292929;
+        }
+      }
+    }
+  }
+}
+
+.hr {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+		align-items: center;
+		padding-top: 50rpx;
+	.line {
+	width: 8%;
+	height: 1px;
+	background-color: #eee;
+	
+	}
+	.text {
+		padding: 0 20rpx;
+		font-size: 20rpx;
+		color: #aaa;
+	}
+}
+.authorizedBtn {
+	width: 690rpx;
+	height: 100rpx;
+	margin:  auto;
+	line-height: 100rpx;
+	background: linear-gradient(180deg, #2A62FF 0%, #5B89FF 100%);
+	color: #fff;
+	font-size: 30rpx;
+	border-radius: 20rpx;
+}

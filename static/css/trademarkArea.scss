@@ -1,0 +1,111 @@
+// 大白色区域的盒子
+.whiteBgBox {
+  margin: 0 auto;
+  width: 700rpx;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 55rpx 40rpx;
+}
+// 公共类的单个盒子
+.itemInpBox {
+  .title1 {
+    font-size: 36rpx;
+    color: #1c2132;
+  }
+  .title2 {
+    padding-top: 40rpx;
+    padding-bottom: 20rpx;
+    .t1 {
+      font-size: 26rpx;
+      color: #1c2132;
+    }
+    .t2 {
+      font-size: 26rpx;
+      color: #989898;
+    }
+  }
+  .inpbox {
+    height: 90rpx;
+    border-radius: 10rpx;
+    overflow: hidden;
+    border: 2rpx solid #dfdddd;
+    /* #ifdef MP-ALIPAY */
+    .onlyBox {
+      padding: 30rpx;
+      height: 90rpx;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .t1 {
+        font-size: 28rpx;
+        color: #666666;
+      }
+      .t2 {
+        font-size: 14px;
+        color: #dfdddd;
+      }
+    }
+    /* #endif */
+    .picker {
+      height: 90rpx;
+      .onlyBox {
+        padding: 30rpx;
+        height: 90rpx;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .t1 {
+          font-size: 28rpx;
+          color: #666666;
+        }
+        .t2 {
+          font-size: 14px;
+          color: #dfdddd;
+        }
+      }
+    }
+  }
+}
+// 公共类的单个盒子
+.itemListBox {
+  .itemListBox2 {
+    padding: 80rpx 0;
+    width: 646rpx;
+    margin: 0 auto;
+    border-bottom: 2rpx dashed #dddddd;
+    .titlebox {
+      font-size: 36rpx;
+      color: #1c2132;
+      padding-bottom: 40rpx;
+    }
+    .graybox {
+      view {
+        text-align: justify;
+        font-size: 26rpx;
+        color: #969696;
+        padding-top: 20rpx;
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+    .blackbox {
+      view {
+        text-align: justify;
+        font-size: 26rpx;
+        color: #1c2132;
+        padding-top: 25rpx;
+        &:first-child {
+          padding-top: 0;
+        }
+        .nmuber {
+          font-size: 48rpx;
+          color: #fc9c1f;
+          padding: 0 5rpx;
+        }
+      }
+    }
+  }
+}

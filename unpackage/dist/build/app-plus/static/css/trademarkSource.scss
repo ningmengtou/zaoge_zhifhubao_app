@@ -1,0 +1,161 @@
+// 列表大全
+.trademarkList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10rpx 30rpx 30rpx;
+  width: 100%;
+  background: #f2f4f5;
+  // 单条
+  .trademarkItem {
+    width: 48.5%;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30rpx;
+    box-sizing: border-box;
+    margin-top: 20rpx;
+    // 左上角标签
+    .iconTag {
+      display: inline-flex;
+      padding: 5rpx 10rpx;
+      background: linear-gradient(315deg, #ff6e4a 0%, #ffad65 100%);
+      border-radius: 4rpx;
+      font-size: 20rpx;
+      color: #ffffff;
+    }
+    .moreMessage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .imgBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20rpx 0;
+        box-sizing: border-box;
+        .onlyBor {
+          box-sizing: border-box;
+          width: 200rpx;
+          height: 200rpx;
+          display: inline-flex;
+          justify-items: center;
+          align-items: center;
+          overflow: hidden;
+          border: 1px solid #ddd;
+          image {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+      .titles {
+        width: 100%;
+        font-size: 28rpx;
+        font-weight: 600;
+        color: #292929;
+        text-align: left;
+        padding-bottom: 15rpx;
+      }
+      .type {
+        line-height: 40rpx;
+        height: 80rpx;
+        width: 100%;
+        text-align: left;
+        font-size: 22rpx;
+        font-weight: 400;
+        color: #abafbd;
+      }
+      .price {
+        padding-top: 15rpx;
+        width: 100%;
+        .t1 {
+          font-size: 28rpx;
+          font-weight: 700;
+          color: #e73c15;
+        }
+        .t2 {
+          padding-left: 10rpx;
+          font-size: 22rpx;
+          font-weight: 400;
+          color: #e73c15;
+        }
+      }
+    }
+  }
+}
+// 没有数据
+.ifNoData {
+  padding-top: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  image {
+    width: 328rpx;
+    height: 165rpx;
+  }
+}
+// ---------------------华丽的分割线-----------------------------
+.threeSelect {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20rpx 30rpx;
+  background: #fff;
+  .pickItem {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 20rpx;
+    overflow: hidden;
+  }
+  .pickOnly {
+    height: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* #ifdef MP-ALIPAY */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 20rpx;
+    overflow: hidden;
+    /* #endif */
+    .t1 {
+      color: #333;
+      max-width: 90%;
+      font-size: 20rpx;
+    }
+    .t2 {
+      color: #333;
+      padding-left: 5rpx;
+      font-size: 28rpx;
+    }
+  }
+}
+// ---------------------华丽的分割线-----------------------------
+//  黄老师把页面分为了上下两个页面
+// .sourcePageView {
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: column;
+//   .sourcePageFixHead {
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+//   .sourcePageFixBody {
+//     flex: 1;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//   }
+// }

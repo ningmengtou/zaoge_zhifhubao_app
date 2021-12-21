@@ -1,0 +1,255 @@
+// 这个文件，首页三个注册页面的样式，分别是：“快速注册”、“担保注册”、“专家注册”
+
+// 头部提示
+.tipTopBox {
+  background: #e3e9ff;
+  display: flex;
+  align-items: center;
+  padding: 15rpx 40rpx;
+  .text {
+    font-size: 22rpx;
+    color: #1247fc;
+    padding-right: 5rpx;
+  }
+  .iconfont {
+    font-size: 20rpx;
+    color: #1247fc;
+  }
+}
+// 表单
+.formView {
+  .formView2 {
+    // 公共类盒子
+    .allView {
+      width: 100%;
+      border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+    }
+    // 左侧的文字
+    .textFl {
+      font-size: 26rpx;
+      color: #1c2132;
+    }
+    // 文本框中的提示
+    .place {
+      font-size: 28rpx;
+      color: #969696;
+    }
+    // 左右五五分
+    .inputView,
+    .pickerView {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .fls {
+        width: 50%;
+        padding: 40rpx 0;
+      }
+      .frs {
+        width: 50%;
+        padding: 40rpx 0;
+        .onlyBox {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 10rpx 0;
+          .t1 {
+            padding-right: 10rpx;
+          }
+          .t2 {
+            font-size: 24rpx;
+            color: #333;
+          }
+        }
+        .input {
+          height: 40rpx;
+          line-height: 40rpx;
+          font-size: 28rpx;
+          color: #1c2132;
+          text-align: right;
+        }
+        .place {
+          height: 40rpx;
+          line-height: 40rpx;
+        }
+      }
+    }
+    // ++++++++++++++++++++++++++++++华丽分割线++++++++++++++++++++++++++++++
+    // 如果是文本框
+    .inputView {
+    }
+    // 如果是下拉选择框
+    .picker {
+      .onlyBox {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .t1 {
+          font-size: 28rpx;
+          color: #333;
+          padding-right: 10rpx;
+        }
+        .t2 {
+          font-size: 26rpx;
+          color: #333;
+        }
+      }
+    }
+    // 如果是文本域
+    .areaView {
+      border-bottom: none;
+      .fls {
+        padding: 40rpx 0;
+      }
+      .frs {
+        .textarea {
+          background: #f2f4f5;
+          font-size: 28rpx;
+          color: #333;
+          box-sizing: border-box;
+          padding: 30rpx;
+          text-align: justify;
+          line-height: 40rpx;
+        }
+      }
+    }
+    // 如果是上传下载框
+    .uploadView {
+      border-bottom: none;
+      .fls {
+        padding: 40rpx 0;
+      }
+      .frs {
+        .fr1 {
+          padding-bottom: 40rpx;
+          display: flex;
+          align-items: flex-end;
+          .fr1a {
+            width: 160rpx;
+            height: 160rpx;
+            border: 1px solid #eee;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transition: border 0.1s;
+            .bookImage {
+              width: 100%;
+              height: 100%;
+            }
+            .iconfont {
+              font-size: 80rpx;
+              color: #ddd;
+              transition: color 0.1s;
+            }
+            &:active {
+              border: 1px solid #2676fe;
+              .iconfont {
+                font-size: 80rpx;
+                color: #2676fe;
+              }
+            }
+          }
+          .fr1b {
+            padding-left: 40rpx;
+            .text {
+              background: #e3edff;
+              border: 1px solid #2676fe;
+              font-size: 20rpx;
+              color: #1247fc;
+              border-radius: 100rpx;
+              padding: 15rpx 30rpx;
+              transition: all 0.1s;
+            }
+            &:active {
+              .text {
+                background: #d2e4ff;
+              }
+            }
+          }
+        }
+        .fr2 {
+          font-size: 22rpx;
+          color: #989898;
+          text-align: justify;
+          line-height: 35rpx;
+        }
+      }
+    }
+    // 如果是提交按钮
+    .subView {
+      padding: 40rpx 0;
+	  
+	  .clickMore {
+		  padding-top: 20rpx;
+	  	display: flex;
+	  	justify-content: center;
+	  	align-items: center;
+	  	text {
+	  	  font-size: 20rpx;
+	  	}
+		.text {
+		  color: #999;
+		}
+		.agree {
+		  color: $thecol;
+		}
+      .readlabel {
+		  
+        
+        display: inline-flex;
+		width: auto;
+        justify-content: center;
+        align-items: center;
+     
+
+      }
+    }
+	 }
+    // 如果是验证码
+    .codeView {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .fls {
+        padding: 40rpx 0;
+      }
+      .frs {
+        display: flex;
+        align-items: center;
+        width: 500rpx;
+        padding: 40rpx 0;
+        font-size: 28rpx;
+        color: #333;
+        .input {
+          height: 100%;
+        }
+      }
+      .codes {
+        text-align: right;
+        padding: 40rpx 0;
+        color: #277afe;
+        font-size: 28rpx;
+      }
+    }
+    // 如果是提示文字
+    .tiptext {
+      font-size: 22rpx;
+      color: #989898;
+      padding-top: 20rpx;
+    }
+  }
+}
+// 底部叙述的文字
+.botTextIntro {
+  padding-bottom: 40rpx;
+  .botTextIntro2 {
+    view {
+      font-size: 22rpx;
+      color: #989898;
+      text-align: justify;
+      line-height: 40rpx;
+    }
+  }
+}
+
